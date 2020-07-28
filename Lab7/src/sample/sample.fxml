@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+                <HBox prefHeight="373.0" prefWidth="619.0">
+                    <children>
+                        <VBox alignment="CENTER" prefHeight="452.0" prefWidth="344.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Client" />
+                                <TextField fx:id="fieldClientPort" promptText="Clients serwer port">
+                                    <VBox.margin>
+                                        <Insets bottom="15.0" left="30.0" right="30.0" top="5.0" />
+                                    </VBox.margin>
+                                </TextField>
+                  <TextArea fx:id="areaClientLog" prefHeight="118.0" prefWidth="217.0" promptText="Log...">
+                      <VBox.margin>
+                          <Insets bottom="15.0" left="30.0" right="30.0" top="5.0" />
+                      </VBox.margin>
+                  </TextArea>
+                                <TextField fx:id="fieldTargetServer" prefWidth="201.0" promptText="Target server port">
+                                    <VBox.margin>
+                                        <Insets bottom="15.0" left="30.0" right="30.0" top="5.0" />
+                                    </VBox.margin>
+                                </TextField>
+                                <TextArea fx:id="areaMessageClient" prefHeight="81.0" prefWidth="217.0">
+                                    <VBox.margin>
+                                        <Insets bottom="15.0" left="30.0" right="30.0" top="5.0" />
+                                    </VBox.margin>
+                                </TextArea>
+                                <Button mnemonicParsing="false" onAction="#send" text="Send">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                </Button>
+                                <TextArea fx:id="areaMessageToSend" prefHeight="38.0" prefWidth="217.0" promptText="Message to send">
+                                    <VBox.margin>
+                                        <Insets bottom="15.0" left="30.0" right="30.0" top="5.0" />
+                                    </VBox.margin>
+                                </TextArea>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="452.0" prefWidth="294.0">
+                         <children>
+                                    <Label prefHeight="27.0" prefWidth="48.0" text="Serwer" />
+                             <TextField fx:id="fieldServerPort" prefHeight="6.0" prefWidth="177.0" promptText="Server Port">
+                                 <VBox.margin>
+                                     <Insets bottom="15.0" left="30.0" right="30.0" top="5.0" />
+                                 </VBox.margin>
+                             </TextField>
+                        <TextArea fx:id="areaMessageServer" prefHeight="179.0" prefWidth="142.0">
+                            <VBox.margin>
+                                <Insets bottom="15.0" left="30.0" right="30.0" top="5.0" />
+                            </VBox.margin>
+                        </TextArea>
+                         </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="452.0" prefWidth="278.0">
+                         <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" text="Translator" textAlignment="CENTER" />
+                                    <TextField fx:id="fieldTranslatorPort" prefHeight="13.0" prefWidth="175.0" promptText="Server Port">
+                                        <VBox.margin>
+                                            <Insets bottom="15.0" left="30.0" right="30.0" top="5.0" />
+                                        </VBox.margin>
+                                    </TextField>
+                        <TextArea fx:id="areaMessageTranslator" prefHeight="183.0" prefWidth="183.0">
+                            <VBox.margin>
+                                <Insets bottom="15.0" left="30.0" right="30.0" top="5.0" />
+                            </VBox.margin>
+                        </TextArea>
+                         </children>
+                        </VBox>
+                    </children>
+                </HBox>
+    </children>
+</StackPane>

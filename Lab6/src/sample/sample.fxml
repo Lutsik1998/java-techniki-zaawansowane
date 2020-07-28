@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <VBox prefHeight="800.0" prefWidth="600.0">
+            <children>
+                <HBox prefHeight="353.0" prefWidth="600.0">
+                    <children>
+                        <VBox alignment="CENTER" prefHeight="493.0" prefWidth="287.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="First Name" />
+                                <TextField fx:id="fieldFirstName">
+                                    <VBox.margin>
+                                        <Insets bottom="15.0" left="30.0" right="30.0" top="5.0" />
+                                    </VBox.margin>
+                                </TextField>
+                                <Label prefHeight="39.0" prefWidth="56.0" text="Last Name" />
+                                <TextField fx:id="fieldLastName">
+                                    <VBox.margin>
+                                        <Insets bottom="15.0" left="30.0" right="30.0" top="5.0" />
+                                    </VBox.margin>
+                                </TextField>
+                                <Label text="Department Id" />
+                                <TextField fx:id="fieldDepartment">
+                                    <VBox.margin>
+                                        <Insets bottom="15.0" left="30.0" right="30.0" top="5.0" />
+                                    </VBox.margin>
+                                </TextField>
+                                <Button mnemonicParsing="false" onAction="#onSelectClick" text="Select">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#onInsertClick" text="Insert">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#onUpdateClick" text="Update">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#onDeleteClick" text="Delete">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                </Button>
+                        <Button mnemonicParsing="false" onAction="#onSelectXML" text="Select(XML)" />
+                        <Button mnemonicParsing="false" onAction="#onInsertXML" prefHeight="26.0" prefWidth="82.0" text="Insert(XML)" />
+                                <TextField fx:id="fieldNameXMLDepartment">
+                                    <VBox.margin>
+                                        <Insets bottom="15.0" left="30.0" right="30.0" top="5.0" />
+                                    </VBox.margin>
+                                </TextField>
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="360.0" prefWidth="350.0">
+                            <children>
+                                <ListView fx:id="listView" minHeight="104.0" prefHeight="168.0" prefWidth="341.0">
+                                    <VBox.margin>
+                                        <Insets left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin></ListView>
+                                <ListView fx:id="listViewXML" minHeight="104.0" prefHeight="153.0" prefWidth="297.0">
+                                    <VBox.margin>
+                                        <Insets left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin></ListView>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</StackPane>

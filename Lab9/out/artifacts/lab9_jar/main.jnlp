@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" codebase="http://localhost:8080/" href="main.jnlp">
+    <information>
+        <title>Jnlp test</title>
+        <vendor>Vladyslav Lutseko</vendor>
+        <homepage href="http://localhost:8080/" />
+        <description>Lab9</description>
+    </information>
+    <security>
+        <all-permissions/>
+    </security>
+    <resources>
+        <j2se version="1.8+" />
+        <jar href="lab9.jar" />
+    </resources>
+    <application-desc main-class="sample.Main" />
+</jnlp>

@@ -1,0 +1,1 @@
+gcc -fPIC -I "C:\Program Files\Java\jdk1.8.0_241\include\win32" -I "C:\Program Files\Java\jdk1.8.0_241\include" -shared -o libGame.dll Game.cpp
